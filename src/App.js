@@ -19,7 +19,7 @@ class App extends React.Component {
     let total = 0;
 		cart.forEach((product) => {
       subTotal += product.price;
-      tax += subTotal * 0.05;
+      tax = subTotal * 0.05;
       total = subTotal + tax;
 		});
 		return (
@@ -29,7 +29,7 @@ class App extends React.Component {
 				</section>
 				<section className="Right">
 					<Cart cart={this.state.cart} subTotal={subTotal} tax={tax} total={total} />
-					<Checkout />
+          <Checkout total={total}/>
 				</section>
 			</div>
 		);

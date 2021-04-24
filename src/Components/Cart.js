@@ -15,6 +15,7 @@ const Cart = ({ cart, subTotal, tax, total }) => {
 				})}
 			</ul>
 			<h3>Subtotal: ${subTotal.toFixed(2)}</h3>
+			{/* do not want the tax to round up {parseFloat(tax, 2)} not working */}
 			<h3>Tax: ${tax.toFixed(2)}</h3>
 			<h3>Total: ${total.toFixed(2)}</h3>
 		</section>
