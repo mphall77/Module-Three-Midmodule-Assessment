@@ -9,7 +9,7 @@ const GarageSaleList = ({addToCart}) => {
 	});
 
 	return (
-		<section className="Products">
+		<section>
 			<h2>My Garage Sale</h2>
 			<ul>{products}</ul>
 		</section>

@@ -24,12 +24,17 @@ class App extends React.Component {
 		});
 		return (
 			<div className="App">
-				<section className="Left">
+				<section className="Products">
 					<GarageSaleList addToCart={this.addToCart} />
 				</section>
 				<section className="Right">
-					<Cart cart={this.state.cart} subTotal={subTotal} tax={tax} total={total} />
-          <Checkout total={total}/>
+					<Cart
+						cart={this.state.cart}
+						subTotal={subTotal}
+						tax={tax}
+						total={total}
+					/>
+					<Checkout total={total} />
 				</section>
 			</div>
 		);
