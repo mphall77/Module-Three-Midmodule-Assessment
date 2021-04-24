@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cart = ({cart}) => {
+const Cart = ({cart, subTotal}) => {
 	return (
 		<section>
             <h3>Cart</h3>
@@ -10,7 +10,7 @@ const Cart = ({cart}) => {
                     return <li key={id}>{name}: ${price.toFixed(2)}</li>
                 })}
             </ul>
-            <h3>Subtotal: $</h3>
+            <h3>Subtotal: ${subTotal.toFixed(2)}</h3>
             <h3>Tax: $</h3>
             <h3>Total: $</h3>
 		</section>
