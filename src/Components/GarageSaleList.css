@@ -1,25 +1,26 @@
 .App {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	
     gap: 20px;
 }
 
+.Products{
+display: grid;
+	grid-template-columns: 1fr;
+	
+}
 .Products li {
 	list-style: none;
-	display: flex;
+	
 	flex-direction: column;
 	align-items: left;
 	justify-content: center;
 }
 
-.Right {    
-    width: 50%
-}
 
-li button {
-margin-bottom: 5px;
-display: inline-block;
-width: 45%
+
+button {
+margin: 5px;
 }
 
 

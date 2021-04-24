@@ -3,9 +3,9 @@ import productData from "../data/productData";
 import GarageSaleItem from "./GarageSaleItem.js";
 import "./GarageSaleList.css";
 
-const GarageSaleList = () => {
+const GarageSaleList = ({addToCart}) => {
 	const products = productData.map((product) => {
-		return <GarageSaleItem key={product.id} product={product} />;
+        return <GarageSaleItem key={product.id} product={product} addToCart={addToCart}/>;
 	});
 
 	return (
