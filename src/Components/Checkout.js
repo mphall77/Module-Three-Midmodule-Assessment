@@ -30,7 +30,7 @@ class Checkout extends React.Component {
 						Zip Code
 						<input />
 					</label>
-					<button>But Now</button>
+					<button>Buy Now</button>
 				</form>
 			</section>
 		);

@@ -8,9 +8,13 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="App">
-				<GarageSaleList />
-				<Cart />
-				<Checkout />
+				<section className="Left">
+					<GarageSaleList />
+				</section>
+				<section className="Right">
+					<Cart />
+					<Checkout />
+				</section>
 			</div>
 		);
 	}
